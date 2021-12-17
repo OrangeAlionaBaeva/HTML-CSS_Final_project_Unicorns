@@ -1,0 +1,903 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: #E5E5E5;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Motter Corpus Std";
+    src: local("Motter Corpus Std"), url("./fonts/MotterCorpusStd-Regular.otf");
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: local("Nunito Sans"), url("./fonts/NunitoSans-Regular.ttf");
+}
+
+.header {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    padding-top: 7rem;
+    padding-bottom: 9rem;
+}
+
+.logo {
+    font-family: Motter Corpus Std;
+    font-size: 2.6rem;
+    line-height: 3.1rem;
+    font-weight: 400;
+    color: #0B4141;
+    padding-left: 9.8rem;
+}
+
+.nav,
+.btn {
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    cursor: pointer;
+}
+
+.nav-btn {
+    display: flex;
+    padding-right: 9.8rem;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    margin-right: 5rem;
+}
+
+.learn,
+.about {
+    padding-right: 5rem;
+}
+
+.btn {
+    background: #0B4141;
+    border-radius: 12.4rem;
+    color: #FFCCBC;
+    width: 16.3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 4.2rem;
+}
+
+.title-text,
+.title-text-black {
+    font-family: Motter Corpus Std;
+}
+
+.title-img {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 15rem;
+    left: 14rem;
+}
+
+.title-text {
+    color: rgba(255, 204, 188, 1);
+    font-size: calc(2.6rem + (93 - 2.6) * ((100vw - 320px) / (2000 - 320)));
+    text-align: center;
+}
+
+.title-text-black {
+    color: #0B4141;
+    font-size: calc(2.6rem + (93 - 2.6) * ((100vw - 320px) / (2000 - 320)));
+    text-align: center;
+    z-index: 1;
+}
+
+.title {
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 73.4rem;
+}
+
+.title img,
+.description img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description {
+    background: #FFCCBC;
+    background-image: url(./images/Cornelia\ Confettis.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.all-descriptions {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    width: 56%;
+}
+
+.first-description h1 {
+    font-family: Motter Corpus Std;
+    font-weight: 400;
+    font-size: 8rem;
+    color: white;
+    line-height: 9.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.second-description p {
+    font-family: Nunito Sans;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-align: center;
+    color: white;
+}
+
+.choose-destiny {
+    background: #0B4141;
+    font-family: Nunito Sans;
+    display: flex;
+    justify-content: end;
+    padding: 5rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+}
+
+.cd-description {
+    width: 30%;
+    margin-top: 12rem;
+    margin-right: 8rem;
+}
+
+.cd-img img {
+    height: auto;
+    width: 96%;
+}
+
+.frame4012 {
+    float: right;
+}
+
+.cirles {
+    float: left;
+}
+
+.cd-img {
+    float: right;
+}
+
+.cd-title h2,
+.ag-title h2,
+.pr-title h2 {
+    font-size: calc(2.6rem + (49 - 2.6) * ((100vw - 320px) / (2000 - 320)));
+}
+
+.dm-title h2 {
+    font-size: calc(2.6rem + (36 - 2.6) * ((100vw - 320px) / (2000 - 320)));
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.first-magic h1,
+.about-title h2 {
+    font-size: calc(2.6rem + (66 - 2.6) * ((100vw - 320px) / (2000 - 320)));
+}
+
+.cd-btn {
+    border-radius: 12.4rem;
+    color: #FFCCBC;
+    width: 24rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    border: 1px solid;
+    font-size: 1.4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.cd-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    color: #FFCCBC;
+    margin-bottom: 4rem;
+}
+
+.cd-title {
+    font-size: 4.2rem;
+    font-weight: 900;
+    line-height: 6.2rem;
+    color: #FFCCBC;
+    margin-bottom: 4rem;
+}
+
+.always-go,
+.premium {
+    background: rgba(255, 255, 255, 0.7);
+    font-family: Nunito Sans;
+    display: flex;
+    align-items: center;
+    padding-bottom: 7rem;
+    padding-top: 7rem;
+}
+
+.premium {
+    padding-bottom: 0rem;
+}
+
+.always-go {
+    justify-content: space-evenly;
+}
+
+.ag-description,
+.pr-description {
+    width: 25%;
+}
+
+.ag-description {
+    margin-left: -16rem;
+}
+
+.ag-text,
+.pr-text,
+.second-magic p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    color: #0B4141;
+    margin-bottom: 4rem;
+    font-family: Nunito Sans;
+}
+
+.ag-title,
+.pr-title {
+    font-size: 3.8rem;
+    font-weight: 900;
+    line-height: 6.2rem;
+    color: #FFCCBC;
+    margin-bottom: 4rem;
+}
+
+.ag-img img,
+.pr-img img {
+    width: 65%;
+}
+
+.frame108 {
+    float: right;
+}
+
+.group115 {
+    float: left;
+}
+
+.scroll {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.text-scroll {
+    margin-left: 1rem;
+    font-family: Nunito Sans;
+}
+
+.ag-scroll img {
+    width: 70%;
+}
+
+.pr-title {
+    color: #0B4141;
+}
+
+.premium {
+    justify-content: space-evenly;
+    padding: 5rem;
+}
+
+.first-magic h1 {
+    font-family: Motter Corpus Std;
+    font-weight: 400;
+    color: #FFCCBC;
+    line-height: 9.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.second-magic {
+    width: 41%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.magic {
+    background: rgba(245, 245, 245, 0.6);
+}
+
+.magic-img img {
+    width: 100%;
+}
+
+.second-magic p {
+    text-align: center;
+}
+
+.about-us {
+    mix-blend-mode: normal;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 25%, rgba(255, 204, 188, 1) 100%);
+    padding-bottom: 3rem;
+}
+
+.about-title h2 {
+    font-weight: 900;
+    color: white;
+    font-family: Nunito Sans;
+    line-height: 7.2rem;
+    text-align: center;
+    padding-top: 6.4rem;
+}
+
+.one-card {
+    background: rgba(255, 255, 255, 0.8);
+    font-family: Nunito Sans;
+    border-radius: 8px;
+    padding: 1.2rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+}
+
+.author-card {
+    display: flex;
+    align-items: center;
+}
+
+.description-author .name {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.img-card img {
+    width: 75%;
+}
+
+.cards {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-card {
+    padding-bottom: 1.3rem;
+}
+
+.left-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-matter,
+.unicors-exist {
+    background: rgba(255, 255, 255, 0.7);
+    font-family: Nunito Sans;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+    padding-bottom: 0rem;
+}
+
+.detail-matter {
+    padding-right: 0rem;
+}
+
+.unicors-exist {
+    padding: 10rem;
+    justify-content: space-between;
+    padding-bottom: 0rem;
+    padding-top: 50px;
+}
+
+.dm-description {
+    width: 40%;
+    padding-left: 2rem;
+}
+
+.dm-title {
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 6.2rem;
+    color: rgba(11, 65, 65, 1);
+    margin-bottom: 4rem;
+}
+
+.dm-title-unicorn-exist {
+    text-align: center;
+}
+
+.dm-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    color: rgba(11, 65, 65, 1);
+    margin-bottom: 4rem;
+}
+
+.dm-btn {
+    border-radius: 12.4rem;
+    color: rgba(11, 65, 65, 1);
+    width: 18rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    border: 1px solid;
+    font-size: 1.4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.ud-description {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
+
+.ud-img {
+    text-align: center;
+}
+
+.ud-img img {
+    width: 20%;
+    height: auto;
+}
+
+.gs-first-des h1 {
+    font-family: Motter Corpus Std;
+    font-weight: 400;
+    font-size: calc(2.6rem + (66 - 2.6) * ((100vw - 320px) / (2000 - 320)));
+    color: rgba(255, 204, 188, 1);
+    line-height: 9.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.get-started {
+    background: rgba(11, 65, 65, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-footer>.author-card {
+    font-family: Nunito Sans;
+    border: 1px solid rgba(255, 204, 188, 1);
+    padding: 1.5rem;
+    border-radius: 5rem;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.gs-author {
+    margin-left: 1rem;
+    color: rgba(255, 204, 188, 1);
+}
+
+.buttons-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-name {
+    color: rgba(255, 204, 188, 1);
+    margin-bottom: 3rem;
+    margin-left: 7rem;
+}
+
+.cornelia {
+    font-family: Motter Corpus Std;
+    font-size: calc(2.6rem + (-6 - 2.6) * ((100vw - 320px) / (2000 - 320)));
+    font-weight: 400;
+}
+
+.design {
+    font-family: Nunito Sans;
+    font-size: 1rem;
+}
+
+.gs-descriptions {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: 9%;
+    width: 56%;
+}
+
+@media only screen and (max-width: 1540px) {
+    .title-img {
+        left: 0rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .ud-description {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .title-img {
+        left: -8rem;
+    }
+    .choose-destiny {
+        height: 73rem;
+    }
+    .choose-destiny {
+        padding-top: 0px;
+    }
+    /* .cd-img img {
+        z-index: -1;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+    } */
+    .cd-img img {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .detail-matter {
+        padding-bottom: 5rem;
+    }
+    .unicors-exist {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+    .dm-description {
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .title-img {
+        left: -20rem;
+    }
+    .choose-destiny {
+        height: 68rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    .logo {
+        padding-bottom: 3rem;
+        padding-left: 0rem;
+    }
+    .nav-btn {
+        padding-right: 0rem;
+    }
+    .title-text,
+    .title-text-black {
+        font-size: 8rem;
+    }
+    .buttons-footer>.author-card {
+        width: 40%;
+        /* margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem; */
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .center-cards,
+    .right-cards {
+        display: none;
+    }
+    /* .one-card {
+            width: 50rem;
+        } */
+    .title {
+        background-image: url(./images/Your\ product.svg);
+        /* background-size: cover; */
+        background-size: auto 100%;
+        background-position: center;
+        /* padding: 0 8%; */
+        /* height: 80%; */
+        background-repeat: no-repeat;
+        height: 43.4rem;
+    }
+    .title-img {
+        display: none;
+    }
+    .choose-destiny {
+        /* background-image: url(./images/Group\ 113.svg); */
+        /* background-image: url(./images/Your\ product.svg); */
+        /* background-size: cover; */
+        /* background-position: center; */
+        /* padding: 0 8%; */
+        /* height: 80%; */
+        /* background-repeat: no-repeat;
+                background-size: cover; */
+        padding-top: 50px;
+        height: 45rem;
+    }
+    .detail-matter {
+        /* background-image: url(./images/Circles.svg); */
+        /* background-size: cover; */
+        /* background-position: center; */
+        /* padding: 0 8%; */
+        /* height: 80%; */
+        /* background-repeat: no-repeat;
+        background-size: cover; */
+        display: block;
+    }
+    .dm-description {
+        width: 78%;
+        margin: 0 auto;
+    }
+    .dm-title h2 {
+        line-height: 53px;
+    }
+    .dm-title {
+        text-align: center;
+    }
+    .dm-btn {
+        margin: 0 auto;
+    }
+    .cd-img {
+        display: none;
+    }
+    .cd-description {
+        margin-top: 0rem;
+    }
+    .gs-first-des h1 {
+        line-height: 6.6rem;
+    }
+    .gs-descriptions {
+        margin-top: 9%;
+    }
+    .left-cards {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cd-description,
+    .ud-description {
+        width: 78%;
+        margin-right: 13rem;
+    }
+    .ag-img img,
+    .pr-img img {
+        width: 55%;
+    }
+    .ag-description {
+        margin-left: -22rem;
+    }
+    .ag-description,
+    .pr-description {
+        width: 34%;
+    }
+    .unicors-exist {
+        display: block;
+    }
+    .ud-img img {
+        width: 10%;
+    }
+    .ud-description {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .learn,
+    .about {
+        padding-right: 2rem;
+    }
+    .nav {
+        margin-right: 2rem;
+    }
+    .btn {
+        width: 13.3rem;
+    }
+    .title-text,
+    .title-text-black {
+        font-size: 6rem;
+    }
+    .first-description h1 {
+        font-size: 5rem;
+    }
+    .second-description p {
+        font-size: 2rem;
+    }
+    .cd-description {
+        /* width: 0; */
+        margin: 0 auto;
+        width: 65%;
+    }
+    .gs-first-des h1 {
+        line-height: 5.6rem;
+    }
+    .gs-descriptions {
+        width: 100%;
+    }
+    .buttons-footer {
+        flex-direction: column;
+    }
+    .buttons-footer>.author-card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+    .first-magic h1 {
+        margin-bottom: 0rem;
+        line-height: 1rem;
+    }
+    .about-title h2 {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .choose-destiny {
+        height: 55rem;
+    }
+    .ag-img,
+    .pr-img {
+        display: none;
+    }
+    .ag-description,
+    .pr-description {
+        margin: 0 auto;
+        width: 60%;
+    }
+    .always-go,
+    .premium {
+        display: block;
+    }
+    .premium {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .dm-description {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .buttons-footer>.author-card {
+        width: 60%;
+    }
+    .footer-name {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-magic h1 {
+        line-height: 6rem;
+    }
+    .second-magic {
+        width: 70%;
+    }
+    .first-magic h1 {
+        padding-top: 3rem;
+    }
+    .about-title h2 {
+        line-height: 5rem;
+    }
+    .title-text,
+    .title-text-black {
+        font-size: 4rem;
+    }
+    .first-description h1 {
+        line-height: 5.6rem
+    }
+    .second-description p {
+        line-height: 3rem;
+    }
+    .title {
+        height: 32.4rem;
+    }
+    .cd-description {
+        margin-right: 9rem;
+    }
+    .choose-destiny {
+        height: 65rem;
+    }
+    .detail-matter {
+        padding-left: 0px;
+    }
+    .ud-img img {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .nav-btn {
+        flex-direction: column;
+    }
+    .btn {
+        width: 16.3rem;
+        margin-top: 2rem;
+    }
+    .learn,
+    .about {
+        padding-right: 5rem;
+    }
+    .first-description h1 {
+        font-size: 4rem;
+    }
+    .title {
+        height: 22.4rem;
+    }
+    .cd-btn {
+        width: 19rem;
+    }
+    .cd-description {
+        width: 65%;
+        margin-right: 70px;
+    }
+    .cd-text {
+        margin-bottom: 2rem;
+    }
+    .cd-title {
+        line-height: 4.2rem;
+    }
+    .choose-destiny {
+        height: 59rem;
+    }
+    .cd-btn {
+        display: none;
+    }
+    .one-card {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .cards {
+        margin-top: 30px;
+    }
+    .one-card {
+        width: 15rem;
+    }
+    .unicors-exist {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
